@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 import "./App.css";
 import CoffeeCard from "./Components/coffeeCard";
@@ -10,6 +10,12 @@ function App() {
 
   return (
     <>
+    <header>
+      <button className="bg-orange-500 text-white btn"><Link to='/addCoffee'>Add Coffee</Link></button>
+      <button className="bg-orange-500 text-white btn"><Link to='/signin'>Sign In</Link></button>
+      <button className="bg-orange-500 text-white btn"><Link to='/signup'>Sign Up</Link></button>
+      <button className="bg-orange-500 text-white btn"><Link to='/users'>Users</Link></button>
+    </header>
       <h1 className="text-5xl text-purple-600">Hot Coffee</h1>
 
       <div className="grid grid-cols-2 gap-6">
