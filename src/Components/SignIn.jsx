@@ -16,7 +16,7 @@ const SignIn = () => {
                const lastSignInTime = res?.user?.metadata?.lastSignInTime;
                const logInInfo = {email, lastSignInTime};
 
-               fetch('http://localhost:8000/users', {
+               fetch('https://coffee-store-server-kappa-seven.vercel.app/users', {
                     method: 'PATCH',
                     headers: {
                          'content-type': 'application/json'

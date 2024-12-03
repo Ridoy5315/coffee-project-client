@@ -34,7 +34,7 @@ const UpdateCoffee = (props) => {
 
     //https://ibb.co/GQd7n2H
 
-    fetch(`http://localhost:8000/coffee/${_id}`, {
+    fetch(`https://coffee-store-server-kappa-seven.vercel.app/coffee/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

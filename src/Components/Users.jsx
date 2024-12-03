@@ -19,7 +19,7 @@ const Users = (props) => {
     }).then((result) => {
       if (result.isConfirmed) {
         //deleted form database
-        fetch(`http://localhost:8000/users/${id}`, {
+        fetch(`https://coffee-store-server-kappa-seven.vercel.app/users/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

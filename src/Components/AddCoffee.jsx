@@ -21,7 +21,7 @@ const AddCoffee = props => {
 
           //https://ibb.co/GQd7n2H
 
-          fetch('http://localhost:8000/coffee', {
+          fetch('https://coffee-store-server-kappa-seven.vercel.app/coffee', {
                method: 'POST',
                headers: {
                     'content-type': 'application/json'

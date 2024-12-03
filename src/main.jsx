@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 // const veriable = async() => {
-//   const res = await fetch('http://localhost:8000/coffee');
+//   const res = await fetch('https://coffee-store-server-kappa-seven.vercel.app/coffee');
 //   const data = await res.json();
 //   return data;
 // }
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    loader: () => fetch("http://localhost:8000/coffee"),
+    loader: () => fetch("https://coffee-store-server-kappa-seven.vercel.app/coffee"),
     // loader: veriable
   },
   {
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
   {
     path: "/updateCoffee/:id",
     element: <UpdateCoffee></UpdateCoffee>,
-    loader: ({ params }) => fetch(`http://localhost:8000/coffee/${params.id}`),
+    loader: ({ params }) => fetch(`https://coffee-store-server-kappa-seven.vercel.app/coffee/${params.id}`),
   },
   {
     path: "/signin",
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
   {
     path: '/users',
     element: <Users></Users>,
-    loader: () => fetch('http://localhost:8000/users')
+    loader: () => fetch('https://coffee-store-server-kappa-seven.vercel.app/users')
   }
 ]);
 createRoot(document.getElementById("root")).render(

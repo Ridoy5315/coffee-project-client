@@ -20,7 +20,7 @@ const SignUp = (props) => {
                const createdAt = res?.user?.metadata?.creationTime;
                const newUser = {name, email, createdAt}
                //save new data info in database
-               fetch('http://localhost:8000/users', {
+               fetch('https://coffee-store-server-kappa-seven.vercel.app/users', {
                     method: 'POST',
                     headers: {
                          'content-type': 'application/json'
